@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--订单确认中的结算界面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/pay_mode_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="支付方式"/>
+
+        <TextView
+            android:id="@+id/pay_mode_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银联卡支付"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dining_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_mode_btn"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="就餐方式"/>
+
+        <CheckBox
+            android:id="@+id/check_pack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打包"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/counts_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dining_type"
+        android:text="小计：共0样"/>
+
+
+    <LinearLayout
+        android:id="@+id/pack_cost_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/counts_show"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="打包费"/>
+
+        <TextView
+            android:id="@+id/pack_cost_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.00元"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/amount_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="总计：100.00元"/>
+
+        <Button
+            android:id="@+id/go_pay_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去支付"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

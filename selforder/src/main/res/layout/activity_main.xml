@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这事菜单登陆主界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <TextView
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textSize="50sp"
+        android:text="升腾自助点餐系统" />
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:background="#cccccc"
+        android:orientation="horizontal"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        >
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/cqy_user"/>
+        <EditText
+            android:id="@+id/edittext_user_edit"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:textSize="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:hint="请输入用户名"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:background="#cccccc"
+        android:orientation="horizontal"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        >
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/cqy_password"/>
+        <EditText
+
+
+            android:id="@+id/edittext_pass__edit"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:textSize="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textWebPassword"
+            android:hint="请输入密码"/>
+    </LinearLayout>
+
+    <Button
+        android:textSize="30dp"
+        android:background="#cccccc"
+        android:layout_marginTop="40dp"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:text="登陆"
+        android:id="@+id/button_login_button"
+        />
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@null"
+            android:id="@+id/button_register"
+            android:layout_marginTop="40dp"
+            android:text="注册新用户"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30sp"/>
+
+
+        <Button
+            android:background="@null"
+            android:id="@+id/button_forget_pass"
+            android:layout_marginTop="40dp"
+            android:text="忘记密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginLeft="230dp"
+            />
+    </LinearLayout>
+</LinearLayout>

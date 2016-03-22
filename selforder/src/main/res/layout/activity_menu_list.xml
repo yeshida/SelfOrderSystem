@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--菜单分类列表界面-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/menu_list_grid_view"
+        android:layout_width="match_parent"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="50dp"
+        android:verticalSpacing="30dp"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:layout_gravity="right|bottom" />
+
+
+</FrameLayout>

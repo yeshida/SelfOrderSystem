@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--在点餐主界面里的已点菜品列表项-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dish_name_and_taste_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="菜品名称"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dish_type_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="菜品类别"/>
+
+
+        <TextView
+            android:id="@+id/dish_counts_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"/>
+
+        <TextView
+            android:id="@+id/dish_amounts_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="100.00"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

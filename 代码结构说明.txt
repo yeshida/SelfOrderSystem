@@ -1,0 +1,22 @@
+**引用第三方类库说明
+1.android-async-httpclient-1.4.8-with-sources.jar
+        异步Http请求类库。
+2.httpcore-4.4.1.jar
+        apache官方Http协议支持库，Android5.0后，SDK不再内置该库；本项目使用Android6.0 SDK进行编译，因此需手工导入该库。
+3.universal-image-loader-1.9.4-with-sources.jar
+        异步图片加载类库。
+
+**源代码目录说明
+包名：com.centerm.selforder
+--.activity
+   主要的界面Activity都放置在该包下；
+--.base
+   工程的基础支持包，封装常用组件Activity及Fragment；
+--.net
+   网络包。
+   --.request
+      针对每一个类型的网络请求都封装成单独的类，放置在该包中。
+   --.response
+      针对每一个类型的网络返回都封装成单独的类，在该类中解析相应的数据，做数据的预处理甚至生成控件数据适配器需要的数据类型，放置在该包中。
+
+

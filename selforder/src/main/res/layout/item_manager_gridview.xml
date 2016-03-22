@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/item_manager_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        />
+
+    <TextView
+        android:id="@+id/item_manager_text"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="文字"
+        />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/menu_type_delete"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/cqy_face_sad"
+        android:visibility="gone"/>
+
+
+</FrameLayout>
+</LinearLayout>

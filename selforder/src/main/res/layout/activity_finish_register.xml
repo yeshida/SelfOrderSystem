@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 结束注册界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请激活，完成注册"
+            android:textSize="50sp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/finish_email_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请激活，完成注册"
+            android:textSize="40sp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(该链接仅在24小时内有效,24小时后请重新注册)"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/login_eamil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="立即登陆,激活邮箱"
+                android:textSize="40sp"/>
+
+            <Button
+                android:layout_marginLeft="30dp"
+                android:id="@+id/register_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="已激活,开始登陆"
+                android:textSize="40sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

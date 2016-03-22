@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <!-- 主管用户名-->
+            <TextView
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop = "50dp"
+                style="@style/register_tv_style"
+                android:text="手机号码:"
+                android:id="@+id/tv_phone_num"
+                />
+
+            <EditText
+                android:hint="手机号码"
+                style="@style/register_et_style"
+                android:id="@+id/et_phone_num"
+                android:layout_alignTop="@+id/tv_phone_num"
+                android:layout_toRightOf="@+id/tv_phone_num"
+                />
+            <TextView
+                style="@style/register_hint_style"
+                android:text="请填写主管联系电话"
+                android:id="@+id/textView20"
+                android:layout_below="@+id/et_phone_num"
+                android:layout_alignLeft="@+id/et_phone_num"
+                android:layout_alignStart="@+id/et_phone_num" />
+
+            <TextView
+                style="@style/new_tv_style"
+                android:text="主管姓名:"
+                android:id="@+id/tv_manager_real_name"
+                android:layout_below="@+id/textView20"
+                android:layout_toLeftOf="@+id/et_phone_num"
+                android:layout_toStartOf="@+id/et_phone_num" />
+
+
+            <EditText
+                android:hint="主管姓名"
+                style="@style/register_et_style"
+                android:id="@+id/et_manager_real_name"
+                android:layout_alignTop="@+id/tv_manager_real_name"
+                android:layout_toRightOf="@+id/tv_manager_real_name"
+                />
+            <TextView
+                style="@style/register_hint_style"
+                android:text="请填写店铺主管姓名"
+                android:id="@+id/textView21"
+                android:layout_below="@+id/et_manager_real_name"
+                android:layout_alignLeft="@+id/et_manager_real_name"
+                android:layout_alignStart="@+id/et_manager_real_name" />
+
+
+            <TextView
+                style="@style/new_tv_style"
+                android:text="身份证号码:"
+                android:id="@+id/tv_id_card_num"
+                android:layout_below="@+id/textView21"
+                android:layout_toLeftOf="@+id/et_manager_real_name"
+                android:layout_toStartOf="@+id/et_manager_real_name" />
+
+
+            <EditText
+                android:hint="身份证号码"
+                style="@style/register_et_style"
+                android:id="@+id/et_id_card_num"
+                android:layout_alignTop="@+id/tv_id_card_num"
+                android:layout_toRightOf="@+id/tv_id_card_num"
+                />
+            <TextView
+                style="@style/register_hint_style"
+                android:text="请填写店铺主管姓名"
+                android:id="@+id/textView22"
+                android:layout_below="@+id/et_id_card_num"
+                android:layout_alignLeft="@+id/et_id_card_num"
+                android:layout_alignStart="@+id/et_id_card_num" />
+
+
+            <TextView
+                style="@style/new_tv_style"
+                android:text="店铺名称:"
+                android:id="@+id/tv_shop_name"
+                android:layout_below="@+id/textView22"
+                android:layout_toLeftOf="@+id/et_id_card_num"
+                android:layout_toStartOf="@+id/et_id_card_num" />
+
+
+            <EditText
+                android:hint="店铺名称"
+                style="@style/register_et_style"
+                android:id="@+id/et_shop_name"
+                android:layout_alignTop="@+id/tv_shop_name"
+                android:layout_toRightOf="@+id/tv_shop_name"
+                />
+            <TextView
+                style="@style/register_hint_style"
+                android:text="请填写你的店铺名称"
+                android:id="@+id/textView23"
+                android:layout_below="@+id/et_shop_name"
+                android:layout_alignLeft="@+id/et_shop_name"
+                android:layout_alignStart="@+id/et_shop_name" />
+
+
+            <TextView
+                style="@style/new_tv_style"
+                android:text="店铺地址:"
+                android:id="@+id/tv_shop_address"
+                android:layout_below="@+id/textView23"
+                android:layout_toLeftOf="@+id/et_shop_name"
+                android:layout_toStartOf="@+id/et_shop_name" />
+            <TextView
+                android:gravity="center"
+                android:text=">"
+                android:layout_width="160dp"
+                style="@style/register_et_style"
+                android:id="@+id/tv_province"
+                android:layout_alignTop="@+id/tv_shop_address"
+                android:layout_toRightOf="@+id/tv_shop_address"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text=">"
+                android:layout_width="160dp"
+                style="@style/register_et_style"
+                android:id="@+id/tv_city"
+                android:layout_alignTop="@+id/tv_province"
+                android:layout_toRightOf="@+id/tv_province"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text=">"
+                android:layout_width="160dp"
+                style="@style/register_et_style"
+                android:id="@+id/tv_area"
+                android:layout_alignTop="@+id/tv_city"
+                android:layout_toRightOf="@+id/tv_city"
+                />
+            <TextView
+                style="@style/register_hint_style"
+                android:text="根据定位得到的地址"
+                android:id="@+id/textView24"
+                android:layout_below="@+id/tv_province"
+                android:layout_alignLeft="@+id/tv_province"
+                android:layout_alignStart="@+id/tv_province" />
+
+            <TextView
+                style="@style/new_tv_style"
+                android:text="具体地址:"
+                android:id="@+id/tv_detail_address"
+                android:layout_below="@+id/textView24"
+                android:layout_toLeftOf="@+id/tv_province"
+                android:layout_toStartOf="@+id/tv_province" />
+
+
+            <EditText
+                android:hint="具体地址"
+                style="@style/register_et_style"
+                android:id="@+id/et_detail_address"
+                android:layout_alignTop="@+id/tv_detail_address"
+                android:layout_toRightOf="@+id/tv_detail_address"
+                />
+            <TextView
+                style="@style/register_hint_style"
+                android:text="请填写你的店铺具体地址"
+                android:id="@+id/textView25"
+                android:layout_below="@+id/et_detail_address"
+                android:layout_alignLeft="@+id/et_detail_address"
+                android:layout_alignStart="@+id/et_detail_address" />
+
+            <Button
+                android:textSize="30sp"
+                android:id="@+id/register_detail_suc"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="完成"
+                android:layout_below="@id/textView25"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+

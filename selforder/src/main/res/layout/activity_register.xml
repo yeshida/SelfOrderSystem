@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注册新用户界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- 主管用户名-->
+    <TextView
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop = "50dp"
+        style="@style/register_tv_style"
+        android:text="主管用户名:"
+        android:id="@+id/tv_manager_name"
+         />
+
+    <EditText
+        android:hint="请输入主管用户名"
+        style="@style/register_et_style"
+        android:id="@+id/et_manager_name"
+        android:layout_alignTop="@+id/tv_manager_name"
+        android:layout_toRightOf="@+id/tv_manager_name"
+       />
+
+    <ImageView
+         style="@style/register_img_style"
+        android:id="@+id/img_check_name"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/et_manager_name"
+        android:layout_toRightOf="@+id/et_manager_name"
+        android:layout_toEndOf="@+id/et_manager_name"
+      />
+
+    <TextView
+       style="@style/register_hint_style"
+        android:text="请输入2-20个字符，字母、数字和下划线任意两种组合"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/et_manager_name"
+        android:layout_alignLeft="@+id/et_manager_name"
+        android:layout_alignStart="@+id/et_manager_name" />
+
+    <TextView
+        style="@style/new_tv_style"
+        android:text="E-Mail:"
+        android:id="@+id/tv_email"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/et_manager_name"
+        android:layout_toStartOf="@+id/et_manager_name" />
+
+    <com.centerm.selforder.view.EmailAutoCompleteTextView
+        android:inputType="textEmailAddress"
+        android:hint="E-MAIL"
+        style="@style/register_et_style"
+        android:id="@+id/et_email"
+        android:layout_alignTop="@+id/tv_email"
+        android:layout_toLeftOf="@+id/img_check_name"
+        android:layout_toStartOf="@+id/img_check_name"
+        android:background="#eeeeee"/>
+
+    <ImageView
+        style="@style/register_img_style"
+        android:id="@+id/img_check_email"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/img_check_name"
+        android:layout_alignStart="@+id/img_check_name" />
+
+    <TextView
+        style="@style/register_hint_style"
+        android:text="请输入正确的邮箱地址，以保证激活账号"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/et_email"
+        android:layout_alignLeft="@+id/et_email"
+        android:layout_alignStart="@+id/et_email" />
+
+    <TextView
+
+        style="@style/new_tv_style"
+        android:text="密码:"
+        android:id="@+id/tv_pass"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/tv_manager_name"
+        android:layout_alignEnd="@+id/tv_manager_name" />
+
+    <EditText
+        android:hint="请输入密码"
+        style="@style/register_et_style"
+        android:inputType="textPassword"
+        android:id="@+id/et_pass"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/img_check_name"
+        android:layout_toStartOf="@+id/img_check_name" />
+
+    <ImageView
+        style="@style/register_img_style"
+        android:id="@+id/img_check_pass"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/img_check_email"
+        android:layout_alignStart="@+id/img_check_email" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/cqy_pass_weak"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/img_pass_strength"
+        android:layout_below="@+id/et_pass"
+        android:layout_alignLeft="@+id/et_pass"
+        android:layout_alignStart="@+id/et_pass" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        style="@style/register_hint_style"
+        android:text="请输入6-32个字符，区分大小写"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/img_pass_strength"
+        android:layout_toRightOf="@+id/img_pass_strength"
+        android:layout_toEndOf="@+id/img_pass_strength" />
+
+    <TextView
+        style="@style/register_tv_style"
+        android:text="确认密码:"
+        android:id="@+id/tv_pass_again"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/et_pass"
+        android:layout_toStartOf="@+id/et_pass" />
+
+    <EditText
+       style="@style/register_et_style"
+        android:inputType="textPassword"
+        android:id="@+id/et_pass_again"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/img_check_name"
+        android:layout_toStartOf="@+id/img_check_name" />
+
+    <ImageView
+     style="@style/register_img_style"
+        android:id="@+id/img_check_pass_again"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/img_check_pass"
+        android:layout_alignStart="@+id/img_check_pass" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/cqy_pass_weak"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/img_pass_strength_again"
+        android:layout_below="@+id/et_pass_again"
+        android:layout_alignLeft="@+id/et_pass_again"
+        android:layout_alignStart="@+id/et_pass_again" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        style="@style/register_hint_style"
+        android:text="请输入6-32个字符，区分大小写"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/img_pass_strength_again"
+        android:layout_toRightOf="@+id/img_pass_strength_again"
+        android:layout_toEndOf="@+id/img_pass_strength_again" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:text="注册"
+        android:id="@+id/button_register_real"
+        android:layout_below="@+id/img_pass_strength_again"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

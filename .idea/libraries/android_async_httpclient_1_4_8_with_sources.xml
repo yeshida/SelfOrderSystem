@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="android-async-httpclient-1.4.8-with-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/selforder/libs/android-async-httpclient-1.4.8-with-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
